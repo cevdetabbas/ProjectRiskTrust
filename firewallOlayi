@@ -1,1 +1,50 @@
 firewall-cmd --permanent --remove-rich-rule='rule family="ipv4" source address="66.69.80.249" service name="ssh" log prefix="ssh" level="info" limit value="1/m" accept'
+
+
+trustta /etc/hosts.allow ve .deny i edit et
+firewalldan sadece ssh ile riskten baglanmasini sagla
+
+
+trust firewall rich rules
+public (active)
+  target: default
+  icmp-block-inversion: no
+  interfaces: ens3
+  sources:
+  services:
+  ports:
+  protocols:
+  masquerade: no
+  forward-ports:
+  source-ports:
+  icmp-blocks:
+  rich rules:
+	rule family="ipv4" source address="66.69.80.249" service name="altmisSeksen" log prefix="girenCikan" level="info" limit value="1/m" accept
+	rule family="ipv4" source address="66.69.80.249" service name="ssh" log prefix="ssh" level="info" limit value="1/m" accept
+	rule family="ipv4" source address="150.136.174.96" service name="ssh" log prefix="ssh" level="info" limit value="1/m" accept
+
+
+firewall risk rules
+public (active)
+  target: default
+  icmp-block-inversion: no
+  interfaces: ens3
+  sources:
+  services: cockpit https
+  ports:
+  protocols:
+  masquerade: no
+  forward-ports:
+  source-ports:
+  icmp-blocks:
+  rich rules:
+	rule family="ipv4" source address="66.69.80.249" service name="ssh" log prefix="ssh" level="info" limit value="1/m" accept
+
+
+vim /usr/lib/firewalld/services
+<?xml version="1.0" encoding="utf-8"?>
+<service>
+  <short>altmisSeksen</short>
+  <description>6080 i kendim bizzat novnc nin guvenligi icin ip addressine yamamk icin olusturdum</description>
+  <port protocol="tcp" port="6080"/>
+</service>
