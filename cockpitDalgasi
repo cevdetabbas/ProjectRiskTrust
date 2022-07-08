@@ -1,0 +1,5 @@
+cockpite root olarak baglanamamak icin
+
+Workaround: In /etc/pam.d/cockpit have this as the first line:
+
+auth requisite pam_succeed_if.so uid >= 1000
