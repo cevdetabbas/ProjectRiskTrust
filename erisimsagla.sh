@@ -13,3 +13,6 @@ chmod 700 erisimisonlandirattheendofthe15minutes.txt
 ./erisimisonlandirattheendofthe15minutes.txt
 firewall-cmd --reload
 firewall-cmd --list-all
+
+
+trust ta sshd root login ini kaldir
