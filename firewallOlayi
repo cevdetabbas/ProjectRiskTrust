@@ -1,0 +1,1 @@
+firewall-cmd --permanent --remove-rich-rule='rule family="ipv4" source address="66.69.80.249" service name="ssh" log prefix="ssh" level="info" limit value="1/m" accept'
