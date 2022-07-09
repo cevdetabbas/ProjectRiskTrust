@@ -2,7 +2,7 @@
 wget https://raw.githubusercontent.com/cevdetabbas/ProjectRiskTrust/main/a.java
 wget https://raw.githubusercontent.com/cevdetabbas/ProjectRiskTrust/main/a.sh
 wget https://raw.githubusercontent.com/cevdetabbas/ProjectRiskTrust/main/au.java
-wget https://raw.githubusercontent.com/cevdetabbas/ProjectRiskTrust/main/authentication.php
+wget https://raw.githubusercontent.com/cevdetabbas/ProjectRiskTrust/main/authentication..php
 wget https://raw.githubusercontent.com/cevdetabbas/ProjectRiskTrust/main/b.java
 wget https://raw.githubusercontent.com/cevdetabbas/ProjectRiskTrust/main/c.java
 wget https://raw.githubusercontent.com/cevdetabbas/ProjectRiskTrust/main/c.sh
