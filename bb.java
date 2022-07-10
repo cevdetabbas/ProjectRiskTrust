@@ -1,10 +1,10 @@
 import java.io.*;
 
-public class erisimisonlandirattheendofthe15minutes
+public class bb
 {
     public static void main(String[] args) throws IOException
     {
-        BufferedReader br = new BufferedReader(new FileReader("erisimsaglafor15minutes.txt"));
+        BufferedReader br = new BufferedReader(new FileReader("aa.txt"));
         StringBuilder sb = new StringBuilder();
         String line = br.readLine();
         while (line != null) { sb.append(line).append("\n"); line = br.readLine(); }
@@ -13,7 +13,7 @@ public class erisimisonlandirattheendofthe15minutes
         a = a+"\nfirewall-cmd --reload\nfirewall-cmd --list-all";
         System.out.println(a);
 
-        BufferedWriter writer = new BufferedWriter( new FileWriter("erisimisonlandirattheendofthe15minutes.txt"));
+        BufferedWriter writer = new BufferedWriter( new FileWriter("bb.txt"));
         writer.write(a);
         writer.close();
 

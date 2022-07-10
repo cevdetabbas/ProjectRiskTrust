@@ -1,13 +1,13 @@
 #!/bin/bash
-javac erisimsaglafor15minutes.java
-java erisimsaglafor15minutes $1
-chmod 700 erisimsaglafor15minutes.txt
+javac aa.java
+java aa $1
+chmod 700 aa.txt
 ./erisimsaglafor15minutes.txt
 firewall-cmd --reload
 firewall-cmd --list-all
 sleep 900
 
-javac erisimisonlandirattheendofthe15minutes.java
-java erisimisonlandirattheendofthe15minutes
-chmod 700 erisimisonlandirattheendofthe15minutes.txt
-./erisimisonlandirattheendofthe15minutes.txt
+javac bb.java
+java bb
+chmod 700 bb.txt
+./bb.txt
