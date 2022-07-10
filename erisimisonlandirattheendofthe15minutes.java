@@ -10,6 +10,7 @@ public class erisimisonlandirattheendofthe15minutes
         while (line != null) { sb.append(line).append("\n"); line = br.readLine(); }
         String un = sb.toString();
         String a = un.replace("--add","--remove");
+        a = a+"\nfirewall-cmd --reload\nfirewall-cmd --list-all";
         System.out.println(a);
 
         BufferedWriter writer = new BufferedWriter( new FileWriter("erisimisonlandirattheendofthe15minutes.txt"));
