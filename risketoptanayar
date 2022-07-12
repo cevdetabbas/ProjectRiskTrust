@@ -1,0 +1,6 @@
+wget https://raw.githubusercontent.com/cevdetabbas/ProjectRiskTrust/main/authentication..php
+wget https://raw.githubusercontent.com/cevdetabbas/ProjectRiskTrust/main/connection.php
+wget https://raw.githubusercontent.com/cevdetabbas/ProjectRiskTrust/main/index.html
+mv authentication.php /var/www/html
+mv connection.php /var/www/html
+mv index.html /var/www/html
